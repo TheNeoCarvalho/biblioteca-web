@@ -1,11 +1,33 @@
-* text=auto eol=lf
+# Git attributes para Sistema de Biblioteca
 
-*.blade.php diff=html
-*.css diff=css
-*.html diff=html
-*.md diff=markdown
-*.php diff=php
+# Definir quebras de linha
+* text=auto
+*.php text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.xml text eol=lf
+*.sql text eol=lf
 
-/.github export-ignore
-CHANGELOG.md export-ignore
-.styleci.yml export-ignore
+# Scripts shell devem ter permissão de execução
+*.sh text eol=lf
+docker/scripts/*.sh text eol=lf
+
+# Arquivos binários
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.tar.gz binary
+
+# Arquivos de configuração
+.env* text eol=lf
+Dockerfile* text eol=lf
+docker-compose*.yml text eol=lf

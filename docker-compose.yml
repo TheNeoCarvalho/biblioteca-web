@@ -1,0 +1,110 @@
+version: '3.8'
+
+services:
+  # Aplicação Laravel
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: sistema-biblioteca-app
+    container_name: biblioteca_app
+    restart: unless-stopped
+    working_dir: /var/www
+    volumes:
+      - ./:/var/www
+      - ./docker/php/local.ini:/usr/local/etc/php/conf.d/local.ini
+    networks:
+      - biblioteca-network
+    depends_on:
+      - db
+      - redis
+
+  # Servidor Web Nginx
+  webserver:
+    image: nginx:alpine
+    container_name: biblioteca_webserver
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+      - "443:443"
+    volumes:
+      - ./:/var/www
+      - ./docker/nginx/conf.d/:/etc/nginx/conf.d/
+      - ./docker/nginx/ssl/:/etc/nginx/ssl/
+    networks:
+      - biblioteca-network
+    depends_on:
+      - app
+
+  # Banco de Dados MySQL
+  db:
+    image: mysql:8.0
+    container_name: biblioteca_db
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: sistema_biblioteca
+      MYSQL_ROOT_PASSWORD: root_password_123
+      MYSQL_USER: biblioteca_user
+      MYSQL_PASSWORD: biblioteca_pass_123
+      MYSQL_ROOT_HOST: "%"
+    volumes:
+      - biblioteca_db_data:/var/lib/mysql
+      - ./docker/mysql/my.cnf:/etc/mysql/my.cnf
+      - ./docker/mysql/init:/docker-entrypoint-initdb.d
+    ports:
+      - "3306:3306"
+    networks:
+      - biblioteca-network
+
+  # Redis para Cache e Sessões
+  redis:
+    image: redis:7-alpine
+    container_name: biblioteca_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - biblioteca_redis_data:/data
+    networks:
+      - biblioteca-network
+
+  # phpMyAdmin para gerenciar o banco
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: biblioteca_phpmyadmin
+    restart: unless-stopped
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      PMA_USER: biblioteca_user
+      PMA_PASSWORD: biblioteca_pass_123
+      MYSQL_ROOT_PASSWORD: root_password_123
+    ports:
+      - "8081:80"
+    networks:
+      - biblioteca-network
+    depends_on:
+      - db
+
+  # Mailhog para testes de email (desenvolvimento)
+  mailhog:
+    image: mailhog/mailhog
+    container_name: biblioteca_mailhog
+    restart: unless-stopped
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+    networks:
+      - biblioteca-network
+
+# Volumes
+volumes:
+  biblioteca_db_data:
+    driver: local
+  biblioteca_redis_data:
+    driver: local
+
+# Networks
+networks:
+  biblioteca-network:
+    driver: bridge
