@@ -1,12 +1,12 @@
 # 📚 Sistema de Biblioteca
 
-Um sistema completvo.
+Um sistema completo de gerenciamento de biblioteca desenvolvido em Laravel, com interface moderna e funcionalidades avançadas para controle de empréstimos, alunos e acervo.
 
 <p align="center">
   <img src="https://img.shields.io/badge/Laravel-10.x-red?style=for-the-badge&logo=laravel" alt="Laravel">
   <img src="https://img.shields.io/badge/PHP-8.2+-blue?style=for-the-badge&logo=php" alt="PHP">
-  <iSQL">
-">
+  <img src="https://img.shields.io/badge/MySQL-8.0-orange?style=for-the-badge&logo=mysql" alt="MySQL">
+  <img src="https://img.shields.io/badge/Docker-Ready-blue?style=for-the-badge&logo=docker" alt="Docker">
 </p>
 
 ## 🚀 Funcionalidades
@@ -18,22 +18,22 @@ Um sistema completvo.
 - ✅ Interface responsiva e intuitiva
 
 ### 📖 **Gestão de Livros**
-
+- ✅ Controle de acervo com ISBN
 - ✅ Gestão de quantidade disponível/total
-baixo
-- ✅ Busca por títulN
+- ✅ Alertas de estoque baixo
+- ✅ Busca por título, autor ou ISBN
 
 ### 🔄 **Sistema de Empréstimos**
-ros
+- ✅ **Busca dinâmica** para alunos e livros
 - ✅ Controle automático de disponibilidade
-nfigurável
-- ✅ Alertas de empr
-os
+- ✅ Prazo de 15 dias configurável
+- ✅ Alertas de empréstimos em atraso
+- ✅ Histórico completo de empréstimos
 
-rna**
-- ✅ Design responsiv 5
-o
-- ✅ **Validações JavaScript** em t real
+### 🎨 **Interface Moderna**
+- ✅ Design responsivo com Bootstrap 5
+- ✅ **Sistema de notificações** avançado
+- ✅ **Validações JavaScript** em tempo real
 - ✅ Confirmações elegantes para exclusões
 - ✅ Dashboard com estatísticas
 - ✅ Ranking dos alunos mais leitores
@@ -41,357 +41,357 @@ o
 ### 🔧 **Recursos Técnicos**
 - ✅ Autenticação segura
 - ✅ Validações server-side e client-side
-
-- ✅ Logs detalhdos
-co
+- ✅ Cache com Redis
+- ✅ Logs detalhados
+- ✅ Backup automático
 - ✅ Ambiente Docker completo
 
-## 🐳 Instalação c)
+## 🐳 Instalação com Docker (Recomendado)
 
 ### Pré-requisitos
-0+)
+- Docker (20.10+)
 - Docker Compose (2.0+)
-it
+- Git
 
-Rápida
+### 🚀 Instalação Rápida
 
-bash
+```bash
 # 1. Clonar o repositório
+git clone <url-do-repositorio>
+cd sistema-biblioteca
 
-</p>strong>rvo</gente de Aceão Inteliteca - Gest Bibliotema de>Sis>
-  <strong"ntern="ce alig
-<pt**
-JavaScriptrap + er + BootsDockLaravel + sando ❤️ uvolvido com esen
-**D
----
-CENSE).
-](LILicense[MIT sob a iado licencrojeto está e p
+# 2. Instalar automaticamente
+make install
 
-Estcença
-## 📄 Lipara-wiki)
-](link-jetodo Proi tação: [Wik Documen
-- 📖ues)ss-ink-para(liHub Issues][Git Issues: m
-- 🐛colioteca. suporte@bibail:- 📧 EmSuporte
-
-
-## 📞 al
-```
-nuel.log  # Malaravtorage/logs/il -f ser
-talogs  # Docke 
-makadosalhogs det l`bash
-# Ver``ug
-e Deb# Logs d##
-
-Manual
-```r  # mize:cleatisan opti
-php ar  # Dockerache-clearash
-make cmpido
-```b Corro### Cache);
+# 3. Acessar a aplicação
+# http://localhost:8080
 ```
 
-#n()->getPdo(connectio
->>> DB::nker tihp artisanão
-pstar conexTe
-# Manual
-  # us mysqltemctl stat
-sudo sysocker ps  # Dposeom
-docker-cestá rodandoQL  se MyS# Verificar``bash
-nco
-`nexão com Baro de Co
+### 📋 Credenciais Padrão
+- **Email:** admin@biblioteca.com
+- **Senha:** admin123
 
-#### Erage/
-```75 stor-R 7o chmod sudrage/
--data stowwww-data: ww -Rudo chownnual
-sMaorage
+### 🌐 Serviços Disponíveis
+| Serviço | URL | Descrição |
+|---------|-----|-----------|
+| **Aplicação** | http://localhost:8080 | Sistema principal |
+| **phpMyAdmin** | http://localhost:8081 | Interface do banco |
+| **Mailhog** | http://localhost:8025 | Captura de emails |
 
-# ar/www/st-R 775 /vod orage
-chmstvar/www/:www-data /w-data-R wwwn ll
-cho shekema# Docker
+### 🛠️ Comandos Úteis
 
 ```bash
- Permissão#### Erro demuns
+# Gerenciamento básico
+make start          # Iniciar containers
+make stop           # Parar containers
+make restart        # Reiniciar containers
+make logs           # Ver logs da aplicação
 
-Coas roblemmas
+# Desenvolvimento
+make shell          # Acessar container da aplicação
+make shell-db       # Acessar MySQL
+make test           # Executar testes
 
-### Pble de Proãoluç
+# Banco de dados
+make migrate        # Executar migrações
+make seed           # Executar seeders
+make fresh          # Recriar banco com dados
 
-## 🐛 Socokup automáti bacistema de ✅ Ssticas
--tatíard com es ✅ Dashbopleto
--omcker ce Do- ✅ Ambient real
- tempoScript emJavas daçõe
-- ✅ Valis avançadoõe notificaçtema de
-- ✅ Sisansivspooderna e reerface m ✅ Intstimos
--ra empréa panâmic✅ Busca diteca
-- o de biblioema complet
-- ✅ Sist2024-01-01) (.0# v1.0
-##og
-# 📝 Changel
-#l Request
-a um Pul. Abrdade`)
-5alinova-funcionture/ fearigin`git push oa a branch (4. Push parade'`)
-idalfuncionona nova ciit -am 'Adi(`git commmudanças as Commit su. `)
-3deuncionalidaova-f-b feature/nout checkre (`git  featuch para suaranrie uma b
-2. Co projeto1. Fork buição
-
-
-## 🤝 Contrioria
-de audits 
-- ✅ Logonfiguradosça curanegaders de s ✅ Hetion
--L Injeccontra SQ✅ Proteção de dados
-- anitização 
-- ✅ SRFções CS
-- ✅ ValidaanctumLaravel Snticação 
-- ✅ Autença
-ura Seg``
-
-## 🛡️c/
-`ta publiasntar para p# ApoApache)
-ginx/dor web (Nrar serviigu
-
-# Confiew:cachertisan v
-php aute:cacherotisan e
-php arch config:caisanhp arttimize
-pisan op
-php artmizar
-
-# OtiUG=false
-APP_DEBroductionV=p_ENPPmbiente
-Aonfigurar ash
-# C
-```baual## Many
+# Manutenção
+make backup         # Criar backup do banco
+make restore FILE=x # Restaurar backup
+make cache-clear    # Limpar cache
+make clean          # Limpar tudo e recomeçar
 ```
 
-#eplood-dke pre
-mafilr MakeOu usa
+## 💻 Instalação Manual (Sem Docker)
 
-# -dyml up od.e.procker-compos dr-compose -fckedução
-doo de pro configuraçãsar```bash
-# Uer
-### Com Dock
+### Pré-requisitos
+- PHP 8.2+
+- Composer
+- MySQL 8.0+
+- Node.js 18+
+- Redis (opcional)
 
-ouçã para Prodoy🚀 Depl
-## so
-atram s empréstimo etrole de
-- Cono baixquede estoertas tores
-- Alos mais leide alunnking 
-- Ratempo realsticas em statícom eoard ashbtricas
-- DMé### 
-.log
-```
-aravelogs/ltorage/lail -f s
-t específicoss
+### Passos de Instalação
 
-# Logsake log
-m tempo real Ver logs em
 ```bash
-#gs### Lomento
+# 1. Clonar repositório
+git clone <url-do-repositorio>
+cd sistema-biblioteca
 
-onitora# 📊 M
+# 2. Instalar dependências PHP
+composer install
+
+# 3. Configurar ambiente
+cp .env.example .env
+php artisan key:generate
+
+# 4. Configurar banco de dados no .env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=sistema_biblioteca
+DB_USERNAME=seu_usuario
+DB_PASSWORD=sua_senha
+
+# 5. Executar migrações e seeders
+php artisan migrate --seed
+
+# 6. Criar link simbólico para storage
+php artisan storage:link
+
+# 7. Instalar dependências Node.js (se houver)
+npm install
+npm run build
+
+# 8. Iniciar servidor
+php artisan serve
 ```
 
-#veragean test --cophp artise
-coveragst
+## 🗄️ Configuração do Banco de Dados
 
-# Com p artisan tenual
-ph# Maake test
-
-Docker
-mh
-# Com 
-
-```bas## 🧪 Testes``
-
-up
-`&& make back/projeto  cd /path/to * * * 2b)
-0nta diário (crondar backup
-
-# Agebackupanual
-make Backup m``bash
-# mático
-`utoackup A``
-
-### Bize
-`he-optimcacr
-make m Docke
-
-# Coimizeisan opthe
-php artacw:c artisan vieache
-phpte:csan rourti
-php anfig:cachesan coarti
-php a produçãoOtimizar par
-# e
-```bashanc Perform## Cache e
-
-#
-```iseaem r  # valor =2.00 _DIAA_PORLIOTECA_MULTLUNO=3
-BIBSTIMOS_POR_AREMAX_EMPTECA_dias
-BIBLIO5  # ESTIMO=1O_EMPR_PRAZIOTECAnv
-BIBL
-# .ezos
-```envizar Praersonalas
-
-### Pes Avançadfiguraçõ 🔧 Conáticas
-
-##s automcaçõe- Notifiatrasos
-e tas dalerbe shboard exi
-- Dancidos ve empréstimos" mostraAtraso Menu "Em rasos**
--Atitorar 6. **Mon
-
-### maticamentedade autoilinibispoliza dstema atuaolução
-- Sião de devque no bot
-- Clivos"timos Ati "Emprésenuções**
-- MDevolur *Gerencia# 5. *s
-
-##drão: 15 diarazo pae
-- Pomaticamentute aidadsponibilca dima verifi
-- Sistevroe liar aluno para encontr** ca dinâmicabuse a *Us"
-- *ostimNovo Empréos" → ""Empréstim
-- Menu imos**éststrar Empr# 4. **Regi
-
-##nibilidadeispoicamente dla automat controtemaades
-- Sis, quantidditora, anoN, etor, ISBo, auulreencha: títivro"
-- Pvo L"Nos" → u "Livroen
-- Mr Livros**adastra. **C
-### 3os
-et correm dadosnticas garatomátões aualidaçie
-- Vsércurso, , ícula email, matr nome, Preencha:o"
--lun"Novo Anos" → "Alu*
-- Menu unos*r Altraadas **C### 2.
-
-tísticasard com estaashbore o d3
-- Explo/ admin12eca.com bibliot com: admin@ogin0
-- Faça l:808stalho/loc http:/esseso**
-- AcAcesrimeiro 
-### 1. **Pma
-sar o Siste# 🎯 Como U
-
-#=tls
-```ENCRYPTIONMAIL_a_app
-nhSWORD=sua_seIL_PASil.com
-MAeu_email@gmaUSERNAME=s7
-MAIL_IL_PORT=58mail.com
-MA.g=smtp_HOSTMAILmtp
-ILER=s)
-MAIL_MA necessáriomenforigurar confEmail (co# 
-
-_PORT=63791
-REDIS27.0.0.=1DIS_HOST=redis
-REON_DRIVERSESSIER=redis
-
-CACHE_DRIVis)al - Red(opcion Cache 
-#a
-nhseRD=sua_PASSWO
-DB_teca_userNAME=biblioB_USERlioteca
-Dbibma_ASE=sisteATAB3306
-DB_D
-DB_PORT=127.0.0.1HOST=B_
-DION=mysqlECTONN
-
-DB_C0host:800://localL=httpue
-APP_URtrG=APP_DEBU
-ocalPP_ENV=la"
-Ae Bibliotecstema d"Si
-APP_NAME=v)
-```env (.enAmbiente de Variáveis
-
-### ILEGES;
-```H PRIV
-FLUS'localhost';eca_user'@ 'bibliotTOioteca.* stema_biblLEGES ON siVI ALL PRI
-GRANT'sua_senha';FIED BY host' IDENTIer'@'localioteca_usSER 'bibl;
-CREATE Uunicode_ci8mb4_COLLATE utf utf8mb4 R SETca CHARACTEiblioteE sistema_bATABASATE D
+### MySQL
 ```sql
-CRESQL Mys
-
-###de Dadoo Banco o dguraçã## 🗄️ Confi
+CREATE DATABASE sistema_biblioteca CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE USER 'biblioteca_user'@'localhost' IDENTIFIED BY 'sua_senha';
+GRANT ALL PRIVILEGES ON sistema_biblioteca.* TO 'biblioteca_user'@'localhost';
+FLUSH PRIVILEGES;
 ```
 
-isan server
-php artervidoar s# 8. Inicid
+### Variáveis de Ambiente (.env)
+```env
+APP_NAME="Sistema de Biblioteca"
+APP_ENV=local
+APP_DEBUG=true
+APP_URL=http://localhost:8000
 
- buill
-npm run
-npm instal(se houver)e.js  Nodênciasar dependal# 7. Instk
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=sistema_biblioteca
+DB_USERNAME=biblioteca_user
+DB_PASSWORD=sua_senha
 
-inrage:ltisan sto
-php artorageco para sbólik simiar lin. Cr
+# Cache (opcional - Redis)
+CACHE_DRIVER=redis
+SESSION_DRIVER=redis
+REDIS_HOST=127.0.0.1
+REDIS_PORT=6379
 
-# 6eed--s migrate  artisanphps
- seederções e migraar5. Executnha
-
-# seSWORD=sua_DB_PASio
-eu_usuar_USERNAME=slioteca
-DB=sistema_bibSEBATADB_DA
-_PORT=3306
-DB.0.127.0HOST=1
-DB_=mysqlB_CONNECTION .env
-Ddados noco de r bannfigura
-
-# 4. Co:generateisan keyarte .env
-php .env.example
-cp mbientigurar a
-
-# 3. Confinstall
-composer dências PHPar depental
-# 2. Inslioteca
-ema-bibsisttorio>
-cd eposio-rl-d<urone ório
-git clonar reposit. Clbash
-# 1
-
-```laçãoe Instassos dPa
-
-### ional)opc
-- Redis (ode.js 18+- N 8.0+
-QLposer
-- MyS 8.2+
-- Comsitos
-- PHP## Pré-requiocker)
-
-#nual (Sem Dção Matala 💻 Ins##
-
-
-```omeçaro e recpar tud     # Lim  clean   ake par cache
-mr    # Limcleae-p
-make cachckustaurar baFILE=x # Re restore o
-make bancp dobacku Criar up         #
-make backutenção
-# Mans
-com dadonco  Recriar ba     #h     ake fresr seeders
-m# Executa           seed
-make igraçõesecutar m        # Exgrate
-make mio de dadoses
-
-# Banc testExecutar#        est    SQL
-make tssar MyAceb       # hell-dção
-make sicaainer da aplAcessar cont      # ll    
-make shelvimento
-# Desenvocação
-aplia gs dVer lo          # s ke logntainers
-maiar co    # Reinic  start  reke ners
-macontai# Parar   top         ake siners
-miar conta # Inic      ake start   co
-mto básiciamenrenGe
-# bash
-```s Úteis
-do### 🛠️ Comanmails |
-
-ura de e:8025 | Captalhost http://loc* || **Mailhog*anco |
-rface do bnte81 | Ilocalhost:80 | http://min**Ad*phpMy|
-| *rincipal ema p:8080 | Sistlhostp://locação** | httca **Apli------|
-|-|----------|----
-|----|ão RL | Descriçço | U Servis
-|onívei Disp# 🌐 Serviçosmin123
-
-##nha:** ad
-- **Seom.cn@bibliotecaadmiil:** rão
-- **Emanciais Pad 📋 Crede##
+# Email (configurar conforme necessário)
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USERNAME=seu_email@gmail.com
+MAIL_PASSWORD=sua_senha_app
+MAIL_ENCRYPTION=tls
 ```
 
-#host:8080://localão
-# httplicaçsar a ap Acesll
+## 🎯 Como Usar o Sistema
 
-# 3.make instaticamente
-tomar au. Instalaa
+### 1. **Primeiro Acesso**
+- Acesse http://localhost:8080
+- Faça login com: admin@biblioteca.com / admin123
+- Explore o dashboard com estatísticas
 
-# 2ibliotecistema-brio>
-cd stoposio-re <url-dit cloneg
+### 2. **Cadastrar Alunos**
+- Menu "Alunos" → "Novo Aluno"
+- Preencha: nome, email, matrícula, curso, série
+- Validações automáticas garantem dados corretos
+
+### 3. **Cadastrar Livros**
+- Menu "Livros" → "Novo Livro"
+- Preencha: título, autor, ISBN, editora, ano, quantidades
+- Sistema controla automaticamente disponibilidade
+
+### 4. **Registrar Empréstimos**
+- Menu "Empréstimos" → "Novo Empréstimo"
+- **Use a busca dinâmica** para encontrar aluno e livro
+- Sistema verifica disponibilidade automaticamente
+- Prazo padrão: 15 dias
+
+### 5. **Gerenciar Devoluções**
+- Menu "Empréstimos Ativos"
+- Clique no botão de devolução
+- Sistema atualiza disponibilidade automaticamente
+
+### 6. **Monitorar Atrasos**
+- Menu "Em Atraso" mostra empréstimos vencidos
+- Dashboard exibe alertas de atrasos
+- Notificações automáticas
+
+## 🔧 Configurações Avançadas
+
+### Personalizar Prazos
+```env
+# .env
+BIBLIOTECA_PRAZO_EMPRESTIMO=15  # dias
+BIBLIOTECA_MAX_EMPRESTIMOS_POR_ALUNO=3
+BIBLIOTECA_MULTA_POR_DIA=2.00   # valor em reais
+```
+
+### Cache e Performance
+```bash
+# Otimizar para produção
+php artisan config:cache
+php artisan route:cache
+php artisan view:cache
+php artisan optimize
+
+# Com Docker
+make cache-optimize
+```
+
+### Backup Automático
+```bash
+# Backup manual
+make backup
+
+# Agendar backup diário (crontab)
+0 2 * * * cd /path/to/projeto && make backup
+```
+
+## 🧪 Testes
+
+```bash
+# Com Docker
+make test
+
+# Manual
+php artisan test
+
+# Com coverage
+php artisan test --coverage
+```
+
+## 📊 Monitoramento
+
+### Logs
+```bash
+# Ver logs em tempo real
+make logs
+
+# Logs específicos
+tail -f storage/logs/laravel.log
+```
+
+### Métricas
+- Dashboard com estatísticas em tempo real
+- Ranking de alunos mais leitores
+- Alertas de estoque baixo
+- Controle de empréstimos em atraso
+
+## 🚀 Deploy para Produção
+
+### Com Docker
+```bash
+# Usar configuração de produção
+docker-compose -f docker-compose.prod.yml up -d
+
+# Ou usar Makefile
+make prod-deploy
+```
+
+### Manual
+```bash
+# Configurar ambiente
+APP_ENV=production
+APP_DEBUG=false
+
+# Otimizar
+php artisan optimize
+php artisan config:cache
+php artisan route:cache
+php artisan view:cache
+
+# Configurar servidor web (Nginx/Apache)
+# Apontar para pasta public/
+```
+
+## 🛡️ Segurança
+
+- ✅ Autenticação Laravel Sanctum
+- ✅ Validações CSRF
+- ✅ Sanitização de dados
+- ✅ Proteção contra SQL Injection
+- ✅ Headers de segurança configurados
+- ✅ Logs de auditoria
+
+## 🤝 Contribuição
+
+1. Fork o projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-funcionalidade`)
+3. Commit suas mudanças (`git commit -am 'Adiciona nova funcionalidade'`)
+4. Push para a branch (`git push origin feature/nova-funcionalidade`)
+5. Abra um Pull Request
+
+## 📝 Changelog
+
+### v1.0.0 (2024-01-01)
+- ✅ Sistema completo de biblioteca
+- ✅ Busca dinâmica para empréstimos
+- ✅ Interface moderna e responsiva
+- ✅ Sistema de notificações avançado
+- ✅ Validações JavaScript em tempo real
+- ✅ Ambiente Docker completo
+- ✅ Dashboard com estatísticas
+- ✅ Sistema de backup automático
+
+## 🐛 Solução de Problemas
+
+### Problemas Comuns
+
+#### Erro de Permissão
+```bash
+# Docker
+make shell
+chown -R www-data:www-data /var/www/storage
+chmod -R 775 /var/www/storage
+
+# Manual
+sudo chown -R www-data:www-data storage/
+sudo chmod -R 775 storage/
+```
+
+#### Erro de Conexão com Banco
+```bash
+# Verificar se MySQL está rodando
+docker-compose ps  # Docker
+sudo systemctl status mysql  # Manual
+
+# Testar conexão
+php artisan tinker
+>>> DB::connection()->getPdo();
+```
+
+#### Cache Corrompido
+```bash
+make cache-clear  # Docker
+php artisan optimize:clear  # Manual
+```
+
+### Logs de Debug
+```bash
+# Ver logs detalhados
+make logs  # Docker
+tail -f storage/logs/laravel.log  # Manual
+```
+
+## 📞 Suporte
+
+- 📧 Email: suporte@biblioteca.com
+- 🐛 Issues: [GitHub Issues](link-para-issues)
+- 📖 Documentação: [Wiki do Projeto](link-para-wiki)
+
+## 📄 Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
+
+---
+
+**Desenvolvido com ❤️ usando Laravel + Docker + Bootstrap + JavaScript**
+
+<p align="center">
+  <strong>Sistema de Biblioteca - Gestão Inteligente de Acervo</strong>
+</p>
